@@ -22,6 +22,8 @@ jobs:
       - name: update readme file
         run: |
           python readme_update.py
+      -name: set cred
+        run: git config --global user.email "reza.rajabi61925@gmail.com" && git config --global user.name "rzarjbi"
       - name: git add
         run: |
           git add .
