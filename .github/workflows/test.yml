@@ -34,17 +34,3 @@ jobs:
             git add .
             git commit -m "readme auto update"
             git push origin master
-      - name: update readme file
-        run: |
-          python readme_update.py
-      - name: set cred
-        run: git config --global user.email "reza.rajabi61925@gmail.com" && git config --global user.name "RezaRjbi"
-      - name: git add
-        run: |
-          git add .
-      - name: commit changed files
-        run: git commit -m "readme auto update"
-      - name: fetch from master
-        run: git fetch origin master
-      - name: push code to master
-        run: git push origin master
