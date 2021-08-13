@@ -22,3 +22,15 @@ jobs:
       - name: update readme file
         run: |
           python readme_update.py
+      - name: set remote
+        run: |
+          git remote add origin https://github.com/RezaRjbi/action-test.git
+      - name: git add
+        run: |
+          git add .
+      - name: commit changed files
+        run: git commit -m "readme auto update"
+      - name: fetch from master
+        run: git fetch origin master
+      - name: push code to master
+        run: git push origin master
