@@ -1,4 +1,4 @@
-import uuid
+import datetime
 
 with open('README.md', 'w') as rm:
-    rm.write(uuid.uuid4())
+    rm.write(f'{datetime.datetime.now()}')
