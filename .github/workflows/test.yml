@@ -3,7 +3,7 @@ name: Python package
 on:
   push:
     paths:
-      - '**.md'
+      - '**.ipynb'
 
 jobs:
   build:
